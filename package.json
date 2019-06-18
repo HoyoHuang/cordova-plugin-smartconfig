@@ -1,7 +1,32 @@
 {
-  "name": "cordova-plugin-smartconfig",
-  "version": "1.0.4",
-  "description": "Cordova Cordova Smart Config plugin for esp8266 and ESP32",
+  "_from": "git+https://github.com/IOCare/cordova-plugin-smartconfig.git",
+  "_id": "cordova-plugin-smartconfig@1.0.4",
+  "_inBundle": false,
+  "_integrity": "sha1-vrb4TvLBLNfFi8UYcDJ2aSd4pi0=",
+  "_location": "/cordova-plugin-smartconfig",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "git",
+    "raw": "https://github.com/IOCare/cordova-plugin-smartconfig.git",
+    "rawSpec": "https://github.com/IOCare/cordova-plugin-smartconfig.git",
+    "saveSpec": "git+https://github.com/IOCare/cordova-plugin-smartconfig.git",
+    "fetchSpec": "https://github.com/IOCare/cordova-plugin-smartconfig.git",
+    "gitCommittish": "master"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "git+https://github.com/IOCare/cordova-plugin-smartconfig.git#e1ec8ad484e5c859322855360ce7a32773f37307",
+  "_spec": "https://github.com/IOCare/cordova-plugin-smartconfig.git",
+  "_where": "O:\\WebSite\\smartconfig",
+  "author": {
+    "name": "Rajendra Khope"
+  },
+  "bugs": {
+    "url": "https://github.com/IOCare/cordova-plugin-smartconfig/issues"
+  },
+  "bundleDependencies": false,
   "cordova": {
     "id": "com.iocare.smartconfig",
     "platforms": [
@@ -9,10 +34,15 @@
       "ios"
     ]
   },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/IOCare/cordova-plugin-smartconfig.git"
-  },
+  "deprecated": false,
+  "description": "Cordova Cordova Smart Config plugin for esp8266 and ESP32",
+  "engines": [
+    {
+      "name": "cordova",
+      "version": ">=3.4.0"
+    }
+  ],
+  "homepage": "https://github.com/IOCare/cordova-plugin-smartconfig#readme",
   "keywords": [
     "phonegap",
     "network",
@@ -23,16 +53,11 @@
     "cordova-android",
     "cordova-ios"
   ],
-  "engines": [
-    {
-      "name": "cordova",
-      "version": ">=3.4.0"
-    }
-  ],
-  "author": "Rajendra Khope",
   "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/IOCare/cordova-plugin-smartconfig/issues"
+  "name": "cordova-plugin-smartconfig",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/IOCare/cordova-plugin-smartconfig.git"
   },
-  "homepage": "https://github.com/IOCare/cordova-plugin-smartconfig#readme"
+  "version": "1.0.4"
 }

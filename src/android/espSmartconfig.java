@@ -33,7 +33,7 @@ import org.json.JSONObject;
 import java.util.ArrayList;
 
 public class espSmartconfig extends CordovaPlugin {
-	
+
 	private WifiManager wifiManager;
 	CallbackContext receivingCallbackContext = null;
 	IEsptouchTask mEsptouchTask;
@@ -76,11 +76,11 @@ public class espSmartconfig extends CordovaPlugin {
                         if (firstResult.isSuc()) {
                              StringBuilder sb = new StringBuilder();
                              for (IEsptouchResult resultInList : resultList) {
-                            	 sb.append("device"+count+",bssid="
+                            	 sb.append("\"device\":\""+count+"\",\"bssid\":\""
                             			 + resultInList.getBssid()
-                            			 + ",InetAddress="
+                            			 + "\",\"ip\":\""
                             			 + resultInList.getInetAddress()
-                            					 .getHostAddress() + ".");
+                            					 .getHostAddress() + "\"}");
                             	 count++;
                             	 if (count >= maxDisplayCount) {
                             		 break;
@@ -90,7 +90,7 @@ public class espSmartconfig extends CordovaPlugin {
                             	 sb.append("\nthere's " + (resultList.size() - count)
                             			 + " more resultList(s) without showing\n");
                              }
-                            PluginResult result = new PluginResult(PluginResult.Status.OK, "Finished: "+sb);
+                            PluginResult result = new PluginResult(PluginResult.Status.OK, "{"+sb);
                             result.setKeepCallback(true);           // keep callback after this call
                             receivingCallbackContext.sendPluginResult(result);
                             //receivingCallbackContext.success("finished");
@@ -201,7 +201,7 @@ public class espSmartconfig extends CordovaPlugin {
         callbackContext.success(returnList);
         return true;
     }
-	
+
 	//Code cobtained from WiFiWizard by hoerresb
     private boolean validateData(JSONArray data) {
         try {
